@@ -91,4 +91,8 @@ cluster.initial_master_nodes: ["elk"]
 # Require explicit names when deleting indices:
 #
 #action.destructive_requires_name: true
+# ---------------------------------- SECCOMP ----------------------------------
+#
+# Fixing https://github.com/spujadas/elk-docker/issues/107
+#
 bootstrap.system_call_filter: false
